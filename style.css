@@ -714,7 +714,7 @@ pit {
     border-radius: 5px;
     border: 1px solid #2196F3;
     background: #ffffff;
-    color: white;
+    color: rgb(7, 0, 0);
     font-size: 1rem;
 }
 
