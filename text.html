@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <style>
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    margin: 0px auto;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: #FFFFFF;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid hsl(185, 9%, 77%);
+}
+.menu-bar{
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #155981;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #7D99A9;
+    font-size: 100%;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+nav ul li a:hover, .btn:hover {
+    color: #65C6FE;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #65C6FE;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.10s;
+}
+.btn a{
+    text-decoration: none;
+    color: #4f4b4b;
+    font-weight: bold;
+}
+.btn:hover{
+    text-decoration: none;
+    background-color: gold;
+    color: #000000;
+}
+
+/* Hero section */
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url('hero.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(8, 61, 84, 0.75);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: #ffffff;
+}
+.hero h2 {
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+}
+.hero a {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    text-decoration: none;
+}
+
+/* about me */
+.aboutme{
+    width: 100%;
+    height: auto;
+}
+
+.about-blank{
+    width: 100%;
+    height: 100px;
+    border-bottom: 0.1px solid #4f4b4b;
+}
+
+.about-blank h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about_inside {
+  display: grid;
+  gap: 150px;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+
+.left{
+  margin-top: 50px;
+  padding-left: 20px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.lp{
+    font-size: 150%;
+    color: rgba(0, 0, 0, 0.971);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+.about-inside-left-p{
+    font-size: 110%;
+    color:  rgba(8, 61, 84, 0.6);
+    margin-left: 20px;
+}
+.bor{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-bottom: 1px solid #4f4b4b;
+}
+
+.leftunderborder {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    font-size: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.lt{
+    color: rgba(8, 61, 84, 0.6);
+}
+
+.right {
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.right img{
+    width: 120%;
+    height: auto;
+}
+
+/* education */
+.education{
+    margin-top: 100px;
+    width: 100%;
+    height: auto;
+    background-color: #F9FBFD;
+    text-align: center;
+}
+
+.blankedu{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #4f4b4b;
+    padding: 30px;
+}
+
+.edup{
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.edudetails{
+    display: flex;
+    gap: 100px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.edudetails img{
+    width: auto;
+}
+
+.edudetails h1{
+    font-size: 100%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.yearr{
+    margin-top: 30px;
+}
+
+.borr{
+    border-top: 1px solid #4f4b4b;
+    margin-top: 7px;
+}
+
+.ssch2, .hsch2, .gradh2{
+    color: #7D99A9;
+    margin-top: 10px;
+    font-size: 120%;
+}
+
+.ssch3, .hsch3, .gradh3{
+    color: #7D99A9;
+    margin-top: 5px;
+    font-size: 100%;
+}
+
+.ssch4, .hsch4, .gradh4{
+    color: #4d6573;
+    margin-top: 5px;
+    font-size: 80%;
+    margin-bottom: 100px;
+}
+
+/* skills */
+.skills{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.blankskills{
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #c3b3b3;
+}
+
+.skh1{
+    text-align: center;
+    padding-top: 35px;
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skgrid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.skill {
+    width: 100%;
+}
+
+.skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #4d6573;
+    margin-left: 60px;
+}
+
+.skill-bar {
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    text-align: right;
+    line-height: 15px;
+    padding-right: 10px;
+    font-weight: bold;
+    color: #e5eaf0;
+    font-size: 80%;
+    border-radius: 10px;
+}
+
+.p90{ 
+    width: 90%; background-color: #2196F3;
+}  
+.p95 { 
+    width: 95%; background-color: #2196F3; 
+}  
+.p97 {
+    width: 97%; background-color: #2196F3; 
+}  
+.p80 { 
+    width: 80%; background-color: #2196F3; 
+}  
+
+/* experience*/
+.experience{
+    width: 100%;
+    height: auto;
+}
+
+.blankexp{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #6b6666;
+}
+
+.blankexph1{
+    text-align: center;
+    padding: 30px;
+}
+
+/* experience grid  */
+.experience-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.experience-grid-item {
+    padding: 20px;
+    font-size: 80%;
+    color: #525658;
+}
+
+.experience-grid-item h1{
+    color: #525658;
+}
+
+.experience-grid-item h2{
+    color: #4d6573;
+}
+
+.exl{
+    text-align: right;
+    margin-left: 200px;
+    margin-top: -10px;
+}
+
+.exr{
+    margin-top: 120px;
+    text-align: left;
+    margin-left: -40px;
+    margin-right: 200px;
+}
+    
+/* profile */
+.profile{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.blank-profile{
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #8f8a8a;
+    border-bottom: 1px solid #847f7f;
+}
+
+.blankpfh1{
+    text-align: center;
+    padding: 30px;
+    padding-top: 33px;
+}
+
+/* profile item  */
+.pit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: #f4f4f4;
+}
+
+.profile-section {
+    display: flex;
+    gap: 100px;
+    margin-left: 170px;
+    margin-top: 50px;
+}
+
+.flex-box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    color: #4d6573;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.8s;
+}
+
+.flex-box:hover {
+    background-color: #2196F3;
+}
+
+.flex-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.pit1{
+    margin-top: -50px;
+}
+
+/* portfolio */
+.portfolio{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.blankportfolio{
+    width: 100%;
+    height: 150px;
+    border-top: 1px solid #6b6666;
+    border-bottom: 1px solid #6b6666;
+}
+
+.blankporth1{
+    text-align: center;
+    padding: 60px;
+}
+
+/* portfolio image  */
+.portfoliobody {
+    padding: 20px;
+    margin-bottom: -100px;
+}
+
+.portcontainer {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
+    height: auto;
+}
+
+.photo-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.photo-item:hover {
+    transform: scale(1.02);
+}
+
+/* Specific grid positions */
+.photo-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.photo-2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.photo-3 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+}
+
+.photo-4 {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.photo-5 {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.photo-6 {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+}
+
+.photo-7 {
+    grid-column: 3 / 5;
+    grid-row: 3 / 4;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* clients  */
+.clients{
+    width: 100%;
+    height: auto;
+}
+
+.blankclients{
+    width: 100%;
+    height: 150px;
+}
+
+.blankclintsh1{
+    text-align: center;
+    padding: 60px;
+}
+
+/* clients flex */
+.clientsbody{
+    padding: 20px;
+}
+
+.client-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.client-image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.client-image-item {
+    width: 150px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(145, 197, 205, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.client-image-item:hover {
+    transform: scale(1.05);
+}
+
+.client-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* contract  */
+.contactf{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+.blankcon{
+    width: 100%;
+    height: 150px;
+}
+
+.blankconh1{
+    text-align: center;
+    padding: 60px;
+}
+
+/* contact form  */
+.contact-form {
+    padding: 50px 80px;
+    border: 1px solid #7D99A9;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #2196F3;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #2196F3;
+    background: #ffffff;
+    color: #4f4b4b;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 10px;
+    background: #2196F3;
+    color: #4d6573;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: gold;
+}
+
+/* footer  */
+footer {
+    height: 100px;
+    color: #4d6573;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Queries for Responsive Design */
+
+/* 921px - 1200px */
+@media only screen and (max-width: 1200px) {
+    /* Header */
+    header {
+        padding: 15px 40px;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 4rem;
+    }
+    
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+    
+    /* About Me */
+    .about_inside {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    
+    /* Education */
+    .edudetails {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+    }
+    
+    /* Experience */
+    .exl {
+        margin-left: 100px;
+    }
+    
+    .exr {
+        margin-right: 100px;
+    }
+    
+    /* Profile */
+    .profile-section {
+        gap: 50px;
+        margin-left: 50px;
+    }
+    
+    .flex-box {
+        width: 150px;
+        height: 150px;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+/* 577px - 920px */
+@media only screen and (max-width: 920px) {
+    /* Header */
+    header {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+    
+    .menu-bar {
+        margin-top: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .btn {
+        margin-top: 15px;
+    }
+    
+    /* Hero Section */
+    .hero {
+        height: 80vh;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    /* About Me */
+    .about_inside {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .left {
+        padding-left: 10px;
+    }
+    
+    .right {
+        padding: 20px;
+    }
+    
+    .right img {
+        width: 100%;
+    }
+    
+    .leftunderborder {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Education */
+    .edudetails {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Skills */
+    .con {
+        grid-template-columns: 1fr;
+    }
+    
+    .skill-bar {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .skill-name {
+        margin-left: 20px;
+    }
+    
+    /* Experience */
+    .experience-grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    
+    .exl, .exr {
+        margin: 0;
+        text-align: center;
+    }
+    
+    /* Profile */
+    .profile-section {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-left: 0;
+        justify-content: center;
+    }
+    
+    .flex-box {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .pit1 {
+        margin-top: 20px;
+    }
+    
+    /* Portfolio */
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    .photo-1 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+    
+    .photo-2, .photo-3, .photo-4, .photo-5 {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .photo-6 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+    
+    .photo-7 {
+        grid-column: 1 / 3;
+        grid-row: auto;
+    }
+    
+    /* Clients */
+    .client-image-gallery {
+        gap: 40px;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 30px 40px;
+    }
+}
+
+/* 0 - 576px */
+@media only screen and (max-width: 576px) {
+    /* Header */
+    header {
+        padding: 10px;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    nav ul {
+        gap: 10px;
+    }
+    
+    nav ul li a {
+        font-size: 80%;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 80%;
+    }
+    
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.3rem;
+    }
+    
+    /* About Me */
+    .lp {
+        font-size: 120%;
+        margin-left: 10px;
+    }
+    
+    .about-inside-left-p {
+        font-size: 100%;
+        margin-left: 10px;
+    }
+    
+    /* Education */
+    .ssch2, .hsch2, .gradh2 {
+        font-size: 100%;
+    }
+    
+    .ssch3, .hsch3, .gradh3 {
+        font-size: 90%;
+    }
+    
+    .ssch4, .hsch4, .gradh4 {
+        font-size: 70%;
+    }
+    
+    /* Profile */
+    .profile-section {
+        gap: 10px;
+    }
+    
+    .flex-box {
+        width: 100px;
+        height: 100px;
+        font-size: 16px;
+    }
+    
+    .flex-box img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    /* Portfolio */
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .photo-1, .photo-2, .photo-3, .photo-4, .photo-5, .photo-6, .photo-7 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    /* Clients */
+    .client-image-gallery {
+        gap: 20px;
+    }
+    
+    .client-image-item {
+        width: 100px;
+        height: 50px;
+    }
+    
+    /* Contact Form */
+    .contact-form {
+      display: none;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+    
+    .contact-form h2 {
+        font-size: 1.5rem;
+        display: none;
+    }
+    
+    .contact-form input, .contact-form textarea, .contact-form button {
+        font-size: 0.9rem;
+        display: none;
+    }
+}
+
+
+
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo">My PortFolio</div>
+      <nav class="menu-bar">
+        <ul>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="btn">
+          <a href="#contact">Hire me</a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="overlay"></div>
+
+      <div class="hero-content">
+        <h1>HI I AM MAHMUD</h1>
+        <h2>ui/ux designer and web developer</h2>
+        <p></p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="aboutme" id="aboutme">
+      <div class="about-blank">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="about_inside">
+
+        <div class="left">
+          <p class="lp">I am a Professional UI/UX Designer and Web developer. Consectetur an adipisi elita, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
+
+          <p class="about-inside-left-p">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspi unde omnis iste natus error sit voluptatem accusantium doloremque lauda ntium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam vo luptatem quia voluptas sit aspernatur aut odit aut fugit,</p>
+
+          <div class="bor"></div>
+
+          <div class="leftunderborder">
+
+
+          <div class="leftpn">
+
+            <p class="lt">phone</p>
+            <p>+8801515616625</p>
+          </div>
+         
+
+          <div class="leftemail">
+
+            <p class="lt">Email</p>
+            <p>Mahmudulhasananik40@gmail.com</p>
+          </div>
+        </div>
+
+        </div>
+        <div class="right">
+          <img src="Anik.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="education" id="edu">
+
+        <div class="blankedu" >
+
+            <p class="edup" >Education</p>
+        </div>
+
+        <div class="edudetails">
+
+            <div class="ssc">
+                <h1 class="yearr">2008 - 2010</h1>
+                <h1>master of computer science</h1>
+                <div class="borr"></div>
+                <h2 class="ssch2" >university of north carolina</h2>
+                <h3 class="ssch3" >north carolina, USA</h3>
+                <h4 class="ssch4">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h4>
+
+            </div>
+
+            <div class="hsc">
+                <h1 class="yearr">2008 - 2010</h1>
+                <h1>master of computer science</h1>
+                <div class="borr"></div>
+                
+                <h2 class="hsch2">university of north carolina</h2>
+                <h3 class="hsch3">north carolina, USA</h3>
+                <h4 class="hsch4">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h4>
+            
+            </div>
+
+            <div class="grad">
+                <h1 class="yearr" >2008 - 2010</h1>
+                <h1>master of computer science</h1>
+                <div class="borr"></div>
+
+                <h2 class="gradh2">university of north carolina</h2>
+                <h3 class="gradh3">north carolina, USA</h3>
+                <h4 class="gradh4">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h4>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <section class="skills" id="skills">
+
+        <div class="blankskills">
+            <h1 class="skh1">Skills</h1>
+
+        </div>
+
+        <div class="con">
+            <div class="skgrid">
+                <div class="skill">
+                    <div class="skill-name">Problem Solving</div>
+                    <div class="skill-bar"><div class="fill p90">90%</div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">UI/UX Design</div>
+                    <div class="skill-bar"><div class="fill p90">90%</div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar"><div class="fill p95">95%</div></div>
+                </div>
+            </div>
+            <div class="skgrid">
+                <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar"><div class="fill p90">90%</div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Communication</div>
+                    <div class="skill-bar"><div class="fill p97">97%</div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">Creativity</div>
+                    <div class="skill-bar"><div class="fill p95">95%</div></div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+
+<section class="experience" id="experience">
+
+
+    <div class="blankexp">
+        <h1 class="blankexph1">Experience</h1>
+    </div>
+
+
+    <div class="experience-grid-container">
+        <div class="experience-grid-item exl">
+            <h1>Hoplony Tech Limited</h1>
+            <h2>newyork, USA</h2>
+            <h3>Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h3>
+        </div>
+        <div class="experience-grid-item exr">
+            <h1>2013 - 2016</h1>
+            <h2>senior UI/UX designer</h2>
+            
+        </div>
+        <div class="experience-grid-item exl">
+            <h1>2012 - 2013</h1>
+            <h2>UI/UX designer</h2>
+           
+        </div>
+        <div class="experience-grid-item exr">
+            <h1>Hoplony Tech Limited</h1>
+            <h2>2010-2022</h2>
+            <h3>Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h3>
+        </div>
+
+        <div class="experience-grid-item exl">
+            <h1>Hoplony Tech Limited</h1>
+            <h2>newyork, USA</h2>
+            <h3>Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</h3>
+        </div>
+        <div class="experience-grid-item exr">
+            <h1>2013 - 2016</h1>
+            <h2>senior UI/UX designer</h2>
+            
+        </div>
+       
+        
+    </div>
+
+
+</section>
+
+
+
+<section class="profile" id="profile">
+
+    <div class="blank-profile">
+        <h1 class="blankpfh1">Profile</h1>
+
+    </div>
+ <div class="pit">
+
+    <div class="profile-section">
+        <div class="flex-box">
+            <img src="git.png" alt="GitHub">
+            <span>GitHub</span>
+        </div>
+        <div class="flex-box">
+            <img src="facebook.png" alt="GitHub">
+            <span>Facebook</span>
+        </div>
+        <div class="flex-box">
+            <img src="Linkedin.png" alt="GitHub">
+            <span>Linkedin</span>
+        </div>
+        <div class="flex-box">
+            <img src="Themeforest.png" alt="GitHub">
+            <span>Themeforest</span>
+        </div>
+    </div>
+
+</div>
+
+<div class="pit1">
+
+    <div class="profile-section">
+        <div class="flex-box">
+            <img src="Themeforest.png" alt="GitHub">
+            <span>Themeforest</span>
+        </div>
+        <div class="flex-box">
+            <img src="Linkedin.png" alt="GitHub">
+            <span>Linkedin</span>
+        </div>
+        <div class="flex-box">
+            <img src="facebook.png" alt="GitHub">
+            <span>Facebook</span>
+        </div>
+        <div class="flex-box">
+            <img src="git.png" alt="GitHub">
+            <span>GitHub</span>
+        </div>
+        
+       
+       
+    </div>
+
+</div>
+
+</section>
+
+
+<section class="portfolio">
+
+
+    <div class="blankportfolio">
+        <h1 class="blankporth1">Portfolio</h1>
+
+    </div>
+
+
+
+    <div class="portfoliobody">
+        <div class="portcontainer ">
+            <div class="photo-grid">
+                <!-- Image 1: Large 2x2 -->
+                <div class="photo-item photo-1">
+                    <img src="1.png" alt="Photo 1">
+                    
+                </div>
+                
+                <!-- Image 2: 1x1 -->
+                <div class="photo-item photo-2">
+                    <img src="2.webp" alt="Photo 2">
+                    
+                </div>
+                
+                <!-- Image 3: 1x1 -->
+                <div class="photo-item photo-3">
+                    <img src="3.webp"alt="Photo 3">
+                   
+                </div>
+                
+                <!-- Image 4: 1x1 -->
+                <div class="photo-item photo-4">
+                    <img src="4.jpg" alt="Photo 4">
+                    
+                </div>
+                
+                <!-- Image 5: 1x1 -->
+                <div class="photo-item photo-5">
+                    <img src="5.avif" alt="Photo 5">
+                   
+                </div>
+                
+                <!-- Image 6: 2x1 -->
+                <div class="photo-item photo-6">
+                    <img src="6.jpg" alt="Photo 6">
+                   
+                </div>
+                
+                <!-- Image 7: 2x1 -->
+                <div class="photo-item photo-7">
+                    <img src="7.png" alt="Photo 7">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="clients" id="clients">
+
+
+    <div class="blankclients">
+        <h1 class="blankclintsh1">Clients</h1>
+
+    </div>
+
+
+    <div class="clientsbody">
+        <div class="client-container">
+            <div class="client-image-gallery">
+                <!-- Image 1 -->
+                <div class="client-image-item">
+                    <img src="c7.png" alt="Client 1">
+                </div>
+                
+                <!-- Image 2 -->
+                <div class="client-image-item">
+                    <img src="c2.jpg">
+                </div>
+                
+                <!-- Image 3 -->
+                <div class="client-image-item">
+                    <img src="c3.png">
+                </div>
+                
+                <!-- Image 4 -->
+                <div class="client-image-item">
+                    <img src="c4.png" alt="Client 4">
+                </div>
+                
+                <!-- Image 5 -->
+                <div class="client-image-item">
+                    <img src="c5.png" alt="Client 5">
+                </div>
+                
+                <!-- Image 6 -->
+                <div class="client-image-item">
+                    <img src="c6.png" alt="Client 6">
+                </div>
+                
+               
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="contactf"id="contact">
+
+    <div class="blankcon">
+        <h1 class="blankconh1">Contact Me</h1>
+
+    </div>
+
+    <div class="contact-form">
+
+    <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</div>
+
+</section>
+
+
+
+
+<footer>
+    <p>&copy; 2025 Mahmud Ul Hasan Anik. All Rights Reserved.</p>
+</footer>
+
+  </body>
+</html>
