@@ -1003,6 +1003,12 @@ html {
     }
     
     /* Clients */
+    .blankclintsh1{
+        margin-top: 80px;
+        border-bottom: 1px solid #6b6666;
+
+    }
+
     .client-image-gallery {
         gap: 20px;
     }
@@ -1013,8 +1019,13 @@ html {
     }
     
     /* Contact Form */
+
+    .blankconh1{
+
+        margin-top: -100px;
+    }
     .contact-form {
-      display: none;
+    
         margin-left: 20px;
         margin-right: 20px;
         padding: 20px;
@@ -1027,7 +1038,7 @@ html {
     
     .contact-form input, .contact-form textarea, .contact-form button {
         font-size: 0.9rem;
-        display: none;
+        
     }
 }
 
