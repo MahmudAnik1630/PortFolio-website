@@ -986,6 +986,11 @@ html {
         width: 30px;
         height: 30px;
     }
+    .pit1{
+        display: flex;
+        margin-left: 0px;
+        margin-top: -55px;
+    }
     
     /* Portfolio */
     .photo-grid {
