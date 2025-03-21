@@ -398,6 +398,7 @@ nav ul li a:hover, .btn:hover {
     width: 100%;
     height: auto;
     margin-top: 100px;
+    
 }
 
 .blank-profile{
@@ -419,13 +420,13 @@ nav ul li a:hover, .btn:hover {
     justify-content: center;
     align-items: center;
     height: auto;
-    background-color: #f4f4f4;
+    
 }
 
 .profile-section {
     display: flex;
     gap: 100px;
-    margin-left: 170px;
+    margin-left: 10px;
     margin-top: 50px;
 }
 
@@ -454,6 +455,7 @@ nav ul li a:hover, .btn:hover {
 }
 
 .pit1{
+    margin-left: 140px;
     margin-top: -50px;
 }
 
