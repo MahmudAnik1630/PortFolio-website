@@ -344,6 +344,10 @@ nav ul li a:hover, .btn:hover {
 .p80 { 
     width: 80%; background-color: #2196F3; 
 }  
+.p75 {
+    width: 75%;
+    background-color: #2196F3;
+}
 
 /* experience*/
 .experience{
