@@ -10,7 +10,7 @@
   <body>
     <header class="container">
       <div class="logo">My PortFolio</div>
-      <nav class="menu-bar">
+      <nav class="menu-bar" id="navMenu">
         <ul>
           <li><a href="#edu">Education</a></li>
           <li><a href="#aboutme">About Me</a></li>
@@ -25,6 +25,13 @@
           <a href="#contact">Hire me</a>
         </div>
       </nav>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </header>
 
     <section class="hero">
@@ -81,7 +88,7 @@
           </div>
         </div>
         <div class="right">
-          <img src="Anik.jpg" alt="" />
+          <img src="Anik.jpg" alt="Mahmud Ul Hasan Anik portrait" />
         </div>
       </div>
     </section>
@@ -237,19 +244,19 @@
 
           <a href="https://www.facebook.com/MahmudAnik1630" class="linka">
             <div class="flex-box">
-              <img src="facebook.png" alt="GitHub" />
+              <img src="facebook.png" alt="Facebook" />
               <span>Facebook</span>
             </div>
           </a>
 
           <div class="flex-box">
-            <img src="Linkedin.png" alt="GitHub" />
+            <img src="Linkedin.png" alt="LinkedIn" />
             <span>Linkedin</span>
           </div>
 
           <a href="https://www.instagram.com/mahmud_ul_hasan_anikk/" class="linka">
           <div class="flex-box">
-            <img src="Instagram.jpeg" alt="GitHub" />
+            <img src="Instagram.jpeg" alt="Instagram" />
             <span>Instagram</span>
           </div>
           </a>
@@ -265,58 +272,44 @@
       <div class="portfoliobody">
         <div class="portcontainer">
           <div class="photo-grid">
-            <!-- Image 1: Large 2x2 -->
-             
             <div class="photo-item photo-1">
               <a href="https://web-agency-using-html-and-css.vercel.app/">
               <img src="1.png" alt="Photo 1" />
               </a>
             </div>
-            
 
-            <!-- Image 2: 1x1 -->
             <div class="photo-item photo-2">
               <a href="https://penta-global-projects.vercel.app/">
                   <img src="2.webp" alt="Photo 2" />
               </a>
-              
             </div>
 
-            <!-- Image 3: 1x1 -->
             <div class="photo-item photo-3">
               <a href="https://add-to-cart-sooty.vercel.app/"><img src="3.webp" alt="Photo 3" />
               </a>
-              
             </div>
 
-            <!-- Image 4: 1x1 -->
             <div class="photo-item photo-4">
               <a href="https://add-to-cart-sooty.vercel.app/">
                 <img src="4.jpg" alt="Photo 4" />
               </a>
             </div>
 
-            <!-- Image 5: 1x1 -->
             <div class="photo-item photo-5">
               <a href="https://web-agency-using-html-and-css.vercel.app/"><img src="5.avif" alt="Photo 5" />
               </a>
-              
             </div>
 
-            <!-- Image 6: 2x1 -->
             <div class="photo-item photo-6">
               <a href="https://penta-global-projects.vercel.app/">
                   <img src="6.jpg" alt="Photo 6" />
               </a>
-            
             </div>
 
-            <!-- Image 7: 2x1 -->
             <div class="photo-item photo-7">
               <a href="https://add-to-cart-sooty.vercel.app/">
                 <img src="7.png" alt="Photo 7" />
               </a>
-              
             </div>
           </div>
         </div>
@@ -331,71 +324,47 @@
       <div class="clientsbody">
         <div class="client-container">
           <div class="client-image-gallery">
-            <!-- Image 1 -->
             <a href="https://drive.google.com/file/d/1bcpxLiAhVsrJ-iMcxcgq90mQWtK96vKL/view?usp=sharing">
-
-            
             <div class="client-image-item">
-              <img src="c7.jpg" alt="Client 1" />
+              <img src="c7.jpg" alt="Certificate 1" />
             </div>
             </a>
 
-            <!-- Image 2 -->
-<a href="https://drive.google.com/file/d/1SyAnW_jP4YKey3j39UjgofsktmIFWOZ_/view?usp=sharing">
-
-
-
-
+            <a href="https://drive.google.com/file/d/1SyAnW_jP4YKey3j39UjgofsktmIFWOZ_/view?usp=sharing">
             <div class="client-image-item">
-              <img src="c2.png" />
+              <img src="c2.png" alt="Certificate 2" />
             </div>
             </a>
 
-            <!-- Image 3 -->
-             <a href="https://drive.google.com/file/d/1MtXc2tNknIf3tOK9XCQ-SFBnSA9E7MFE/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1MtXc2tNknIf3tOK9XCQ-SFBnSA9E7MFE/view?usp=sharing">
             <div class="client-image-item">
-              <img src="c3.jpg" />
+              <img src="c3.jpg" alt="Certificate 3" />
             </div>
             </a>
-
-            <!-- Image 4 -->
 
             <a href="https://drive.google.com/file/d/15qU6Bw4Ozb-lKpgSkX25IwfLI2Waj52t/view?usp=sharing">
             <div class="client-image-item">
-              <img src="c4.jpg" alt="Client 4" />
+              <img src="c4.jpg" alt="Certificate 4" />
             </div>
             </a>
 
-            <!-- Image 5 -->
-             <a href="https://drive.google.com/file/d/1BztEOvjdey3SymdrmiGXCuKUxUp0Pj5z/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1BztEOvjdey3SymdrmiGXCuKUxUp0Pj5z/view?usp=sharing">
             <div class="client-image-item">
-              <img src="c5.webp" alt="Client 5" />
+              <img src="c5.webp" alt="Certificate 5" />
             </div>
             </a>
 
-            <!-- Image 6 -->
-            
-              <a
-                href="https://drive.google.com/file/d/1QNgRMF3WcEo-BR1XDKMX4v_KSzPHSaJJ/view?usp=sharing"
-              >
+            <a href="https://drive.google.com/file/d/1QNgRMF3WcEo-BR1XDKMX4v_KSzPHSaJJ/view?usp=sharing">
               <div class="client-image-item">
-                 <img src="c6.jpeg" alt="Client 6" />
+                 <img src="c6.jpeg" alt="Certificate 6" />
               </div>
-               
-              </a>
+            </a>
 
-              <!--Image 7-->
-                 <a
-                href="https://drive.google.com/file/d/1SDnLwOhVE8_nFDO9_u4TIRJiGefXLW5V/view?usp=sharing"
-              >
+            <a href="https://drive.google.com/file/d/1SDnLwOhVE8_nFDO9_u4TIRJiGefXLW5V/view?usp=sharing">
               <div class="client-image-item">
-                <img src="bd.jpg" alt="Client 6" />
+                <img src="bd.jpg" alt="Certificate 7" />
               </div>
-                
-              </a>
-
-
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -420,7 +389,7 @@
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="button" class="btn" onclick="sendMail()">Send Message</button>
         </form>
       </div>
     </section>
@@ -428,5 +397,8 @@
     <footer>
       <p>&copy; 2025 Mahmud Ul Hasan Anik. All Rights Reserved.</p>
     </footer>
+
+    <!-- Link to external JS file -->
+    <script src="script.js"></script>
   </body>
 </html>
